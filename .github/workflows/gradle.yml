@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout Git Repo
         uses: actions/checkout@v4
+      - name: validate gradle wrapper
+        uses: gradle/wrapper-validation-action@v2
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
