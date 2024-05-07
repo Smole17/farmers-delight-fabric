@@ -4,9 +4,12 @@ import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.entry.EntryStack;
+import me.shedaniel.rei.api.common.entry.settings.EntryIngredientSetting;
+import me.shedaniel.rei.api.common.entry.settings.EntrySettingsAdapterRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.util.Formatting;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.AbstractList;
 import java.util.Arrays;
@@ -147,4 +150,13 @@ public class ChanceArrayIngredient extends AbstractList<EntryStack<?>> implement
         return new ChanceArrayIngredient(out, chance);
     }
 
+    @Override
+    public <T> @Nullable T getSetting(EntryIngredientSetting<T> setting) {
+        return null;
+    }
+
+    @Override
+    public <T> EntryIngredient setting(EntryIngredientSetting<T> setting, T value) {
+        return this;
+    }
 }

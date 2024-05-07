@@ -40,7 +40,7 @@ dependencies {
 
 	/* REI Integration */
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:$rei_version"
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rei_version"
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rei_version_default"
 
 	devEnvDependencies(dependencies)
 }
