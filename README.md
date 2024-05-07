@@ -1,4 +1,4 @@
-# Farmer's Delight
+# Farmer's Delight (fixed for new rei version)
 
 [![Curseforge Downloads](https://cf.way2muchnoise.eu/full_482834_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric) [![Join Discord](https://img.shields.io/discord/842852725070364692?color=brightgreen&label=Discord)](https://discord.gg/MskvEhPDQz)
 
